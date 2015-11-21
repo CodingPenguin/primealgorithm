@@ -10,22 +10,7 @@ elsif primeNumber == 2 || primeNumber == 3
 elsif primeNumber % 2 == 0 || primeNumber % 3 == 0
     puts "#{primeNumber} is a composite number."
 else
-  puts "#{primeNumber} is a prime number.
-  _________           __________
- /  "KHKHK"\        /    "KHKHK"\
-|   "KHKHK" |       |    "KHKHK"|
-|           |       |           |
-|           |       |           |
- \__________/        \__________/
-
-______________________________
- |                          |
- |                          |
- |                          |
- |              "KHKHKHKHKH"|
- |          "KHKHKHKHKHKHKH"|
- \        "HKHKHKHKHKHKHK" /
-  \_____"KHKHKHKHKHKHKH"__/"
+  puts "#{primeNumber} is a prime number."
 end
 =begin          HALL OF BEAUTIFUL PEOPLE:
                           _________           __________
