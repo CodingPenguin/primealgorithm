@@ -1,3 +1,3 @@
-# primealgorithm
+# Prime Algorithm
 
-Algorithm determining if a number is prime or not using Ruby.
+Command line utility algorithm to help determine if a number is prime or not using Ruby.
