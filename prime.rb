@@ -4,7 +4,7 @@ primeNumber = gets.chomp.to_i.abs
 
 case
 when primeNumber == String
-  puts "Only Accept Number(s)"
+  puts "Only Accept Number"
 when primeNumber == 1, primeNumber == 0
   puts "Neither composite nor prime."
 when primeNumber == 2, primeNumber == 3
