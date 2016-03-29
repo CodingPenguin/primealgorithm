@@ -1,11 +1,43 @@
-# Prime Algorithm
+Prime Algorithm
+=========
 
-Command line utility to determine whether an input is prime or composite number
+A small terminal app to test whether input is prime or composite number
 
-## Getting Started
+## Installation
 
-$ npm install -g primealgorithm
+  ```
+  $ npm install -g primealgorithm
+  ```
+  
+## Usage
 
-$ prime -n
+  From the terminal:
 
+  ```
+  $ prime -n
+  ```
+  
+  or
+  
+  ```
+  $ prime --number
+  ```
+  
+  ```
+  $ Number: <Insert Number of Your Choice>
+  ```
 
+  Example:
+
+  ```
+  $ Number: 2
+  ```
+
+## Version
+* 1.0
+
+## License
+* ISC
+
+---
+###### Copyright (c) 2015 Danny Nguyen
