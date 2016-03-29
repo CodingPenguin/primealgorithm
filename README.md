@@ -17,12 +17,6 @@ A small terminal app to test whether input is prime or composite number
   $ prime -n
   ```
   
-  or
-  
-  ```
-  $ prime --number
-  ```
-  
   ```
   $ Number: <Insert Number of Your Choice>
   ```
