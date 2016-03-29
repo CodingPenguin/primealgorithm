@@ -21,12 +21,6 @@ A small terminal app to test whether input is prime or composite number
   $ Number: <Insert Number of Your Choice>
   ```
 
-  Example:
-
-  ```
-  $ Number: 2
-  ```
-
 ## Version
 * 1.0
 
