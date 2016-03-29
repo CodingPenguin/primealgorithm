@@ -1,3 +1,9 @@
 # Prime Algorithm
 
-Command line utility algorithm to help determine if a number is prime or not using Ruby.
+Command line utility to determine whether an input is prime or composite number
+
+## Getting Started
+$ npm install -g primealgorithm
+$ prime -n
+
+
