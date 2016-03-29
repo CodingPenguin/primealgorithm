@@ -18,7 +18,7 @@ A small terminal app to test whether input is prime or composite number
   ```
   
   ```
-  $ Number: <Insert Number of Your Choice>
+  Number: <Insert Number of Your Choice>
   ```
 
 ## Version
