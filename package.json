@@ -25,11 +25,11 @@
   "author": "Danny Nguyen, Vanielle Le",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodingPenguin/primealgorithm/issues"
+    "url": "https://github.com/CodingPenguin/primealgorithm/tree/prime-number/issues"
   },
-  "homepage": "https://github.com/CodingPenguin/primealgorithm#readme",
+  "homepage": "https://github.com/CodingPenguin/primealgorithm/tree/prime-number#readme",
   "preferGlobal": true,
   "bin": {
-    "prime": "index.js"
+    "prime-number": "index.js"
   }
 }

@@ -16,7 +16,7 @@ const schema = {
 
 program
   .version(1.0)
-  .option('-n, --number', "Evaluate wether number is prime or composite")
+  .option('-c, --calculate', "Evaluate wether number is prime or composite")
   .parse(process.argv)
 
 if (program.number) {
