@@ -1,31 +1,29 @@
-Prime Number
+Prime Algorithm
 =========
 
-A small terminal app to test whether input is prime or composite number
-
-## Installation
-
-  ```
-  $ npm install -g prime-number
-  ```
+An algorithm to check whether the number is prime or not in different languages.
 
 ## Usage
 
-  From the terminal:
-
+  For Ruby:
   ```
-  $ prime-number -c
-  ```
-
-  ```
-  Number: <Insert Number of Your Choice>
+  $ ruby prime.rb
   ```
 
-## Version
-* 1.0
+  For Python:
+  ```
+  $ python prime.py
+  ```
 
-## License
-* ISC
+  For JavaScript:
+  ```
+  $ node prime.py
+  ```
+
+  For CoffeeScript:
+  ```
+  $ coffee prime.py
+  ```
 
 ---
 ###### Copyright (c) 2015 Danny Nguyen
