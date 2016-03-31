@@ -1,0 +1,34 @@
+{
+  "name": "prime-number",
+  "version": "1.0.0",
+  "description": "Small command line app to determine whether input number is prime or composite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingPenguin/primealgorithm/tree/prime-number"
+  },
+  "keywords": [
+    "prime",
+    "number",
+    "math",
+    "command",
+    "utility"
+  ],
+  "author": "Danny Nguyen, Vanielle Le",
+  "license": "ISC",
+  "bin": {
+    "prime-number": "index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "prompt": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/CodingPenguin/primealgorithm/tree/prime-number/issues"
+  },
+  "homepage": "https://github.com/CodingPenguin/primealgorithm/tree/prime-number#readme",
+  "preferGlobal": true
+}

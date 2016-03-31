@@ -1,4 +1,4 @@
-Prime Algorithm
+Prime Number
 =========
 
 A small terminal app to test whether input is prime or composite number
@@ -6,17 +6,17 @@ A small terminal app to test whether input is prime or composite number
 ## Installation
 
   ```
-  $ npm install -g primealgorithm
+  $ npm install -g prime-number
   ```
-  
+
 ## Usage
 
   From the terminal:
 
   ```
-  $ prime -n
+  $ prime-number -c
   ```
-  
+
   ```
   Number: <Insert Number of Your Choice>
   ```
