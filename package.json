@@ -1,6 +1,6 @@
 {
   "name": "prime-calculate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small command line app to determine whether input number is prime or composite",
   "main": "index.js",
   "scripts": {
