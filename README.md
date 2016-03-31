@@ -1,4 +1,4 @@
-Prime Number
+Prime Calculate
 =========
 
 A small terminal app to test whether input is prime or composite number
@@ -6,7 +6,7 @@ A small terminal app to test whether input is prime or composite number
 ## Installation
 
   ```
-  $ npm install -g prime-number
+  $ npm install -g prime-calculate
   ```
 
 ## Usage
@@ -14,7 +14,7 @@ A small terminal app to test whether input is prime or composite number
   From the terminal:
 
   ```
-  $ prime -c
+  $ prime-calculate
   ```
 
   ```

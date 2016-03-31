@@ -18,11 +18,10 @@ const schema = {
 program
   .version(1.0)
   .description('Small command line app to determine whether input number is prime or composite')
-  .option('-c, --calculate', "Evaluate wether number is prime or composite")
   .parse(process.argv)
 
 
-if (program.calculate) {
+if (program) {
 
   prompt.start()
 
