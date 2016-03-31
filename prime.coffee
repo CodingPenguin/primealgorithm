@@ -1,56 +1,13 @@
-#!/usr/bin/env node
+primeNumber = 6 # insert number of your choice here
 
-'use strict'
-
-
-const program = require('commander')
-const prompt = require('prompt')
-
-const schema = {
-  properties: {
-    primeNumber: {
-      required: true,
-      type: "number"
-    }
-  }
-}
-
-program
-  .version(1.0)
-  .description('Small command line app to determine whether input number is prime or composite')
-  .option('-c, --calculate', "Evaluate wether number is prime or composite")
-  .parse(process.argv)
-
-if (program.calculate) {
-
-  prompt.start()
-
-  prompt.message = "Number:"
-  prompt.delimiter = ""
-
-  prompt.get(schema, (err, result) => {
-    if (err) {
-      console.log(err)
-    }
-    else {
-      let primeNumber = result.primeNumber
-      switch (true) {
-        case primeNumber === 1 || primeNumber === 0: {
-          console.log("Neither Composite or Prime")
-          break;
-        }
-        case primeNumber === 2 || primeNumber === 3: {
-          console.log(`${primeNumber} is a prime number.`)
-          break;
-        }
-        case primeNumber % 2 === 0 || primeNumber % 3 === 0: {
-          console.log(`${primeNumber} is a composite number.`)
-          break;
-        }
-        default: {
-          console.log(`${primeNumber} is a prime number.`)
-        }
-      }
-    }
-  })
-}
+switch
+  when primeNumber.constructor is String
+    console.log "Only Accept Number"
+  when primeNumber is 1 or primeNumber is 0
+    console.log "Neither Composite or Prime"
+  when primeNumber is 2 or primeNumber is 3
+    console.log "#{primeNumber} is a prime number."
+  when primeNumber % 2 is 0 or primeNumber % 3 is 0
+    console.log "#{primeNumber} is a composite number."
+  else
+    console.log "#{primeNumber} is a prime number"
