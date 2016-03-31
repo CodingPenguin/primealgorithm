@@ -17,12 +17,12 @@ An algorithm to check whether the number is prime or not in different languages.
 
   For JavaScript:
   ```
-  $ node prime.py
+  $ node prime.js
   ```
 
   For CoffeeScript:
   ```
-  $ coffee prime.py
+  $ coffee prime.coffee
   ```
 
 ---
