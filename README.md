@@ -20,6 +20,11 @@ A small terminal app to test whether input is prime or composite number
   ```
   Number: <Insert Number of Your Choice>
   ```
+  
+### Note
+- There is a bug if the program received a string (like "Hello World") rather than a numerical value
+- The program will output "Nan .... "
+- Any help in fixing this bug is welcome :)
 
 ## Version
 * 1.0
