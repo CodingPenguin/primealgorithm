@@ -28,4 +28,4 @@ A small terminal app to test whether input is prime or composite number
 * ISC
 
 ---
-###### Copyright (c) 2015 Danny Nguyen
+###### Copyright (c) 2015 Danny Nguyen, Vanielle Le
