@@ -5,7 +5,6 @@
 
   $primeNumber = fgets(STDIN);
 
-
   switch (true) {
     case $primeNumber == 1 || $primeNumber == 0:
       echo "Neither composite or prime.";
