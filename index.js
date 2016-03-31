@@ -21,9 +21,6 @@ program
   .option('-c, --calculate', "Evaluate wether number is prime or composite")
   .parse(process.argv)
 
-if (program) {
-  console.log("Did you mean: prime-number -c?")
-}
 
 if (program.calculate) {
 

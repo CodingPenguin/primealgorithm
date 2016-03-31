@@ -1,5 +1,5 @@
 {
-  "name": "prime-number",
+  "name": "prime-caculate",
   "version": "1.0.0",
   "description": "Small command line app to determine whether input number is prime or composite",
   "main": "index.js",
@@ -20,7 +20,7 @@
   "author": "Danny Nguyen, Vanielle Le",
   "license": "ISC",
   "bin": {
-    "prime-number": "index.js"
+    "prime": "index.js"
   },
   "dependencies": {
     "commander": "^2.9.0",
