@@ -21,7 +21,7 @@ program
   .option('-c, --calculate', "Evaluate wether number is prime or composite")
   .parse(process.argv)
 
-if (program.number) {
+if (program.calculate) {
 
   prompt.start()
 
