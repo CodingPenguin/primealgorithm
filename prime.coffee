@@ -1,3 +1,5 @@
+# Program Starts
+
 primeNumber = 6 # insert number of your choice here
 
 switch

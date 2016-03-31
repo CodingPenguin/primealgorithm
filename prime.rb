@@ -1,4 +1,5 @@
 # Program Starts
+
 puts "Enter your number:"
 primeNumber = gets.chomp.to_i.abs
 
