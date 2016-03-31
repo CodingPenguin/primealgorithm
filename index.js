@@ -10,7 +10,8 @@ const schema = {
   properties: {
     primeNumber: {
       required: true,
-      type: "number"
+      type: "number",
+      message: "Accept Number Only"
     }
   }
 }
@@ -24,7 +25,6 @@ program
 if (program) {
 
   prompt.start()
-
   prompt.message = "Number:"
   prompt.delimiter = ""
 
