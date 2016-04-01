@@ -1,0 +1,13 @@
+/* CSS declarations go here */
+body {
+  background-color: rgba(43, 159, 226, 0.78);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.brand-logo {
+  margin-left: 10px;
+}
