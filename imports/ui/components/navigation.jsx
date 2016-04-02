@@ -38,8 +38,16 @@ export default class Navigation extends React.Component {
        </ToolbarGroup>
        <ToolbarGroup float="right">
           <IconMenu iconButtonElement={<IconButton iconStyle={{fill: "white"}} touch={true}><MoreVertIcon/></IconButton>}>
-            <MenuItem style={{padding: 0}} primaryText="Home" leftIcon={<ActionHome style={styles.svgDefault} hoverColor="#00000"/>} href="/" style={styles.menuItemDefault}/>
-            <MenuItem primaryText="Contact" leftIcon={<ContentMail style={styles.svgDefault}  hoverColor="#00000"/>} href="/contact" style={styles.menuItemDefault}/>
+
+            <MenuItem primaryText="Home"
+                      leftIcon={<ActionHome style={styles.svgDefault}/>}
+                      href="/"
+                      style={styles.menuItemDefault}/>
+
+            <MenuItem primaryText="Contact"
+                      leftIcon={<ContentMail style={styles.svgDefault}/>}
+                      href="/contact"
+                      style={styles.menuItemDefault}/>
           </IconMenu>
        </ToolbarGroup>
      </Toolbar>

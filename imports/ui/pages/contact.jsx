@@ -2,6 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 
 export default class Contact extends React.Component {
+  componentDidMount() {
+    document.title = "Contact | Prime Calculate"
+  }
   render() {
     return (
       <div>
