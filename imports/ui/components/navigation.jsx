@@ -13,19 +13,33 @@ import MoreVertIcon from 'material-ui/lib/svg-icons/navigation/more-vert'
 import ToolbarTitle from 'material-ui/lib/toolbar/toolbar-title'
 import Colors from 'material-ui/lib/styles/colors'
 
+const styles = {
+  navigation: {
+    backgroundColor: "#EF5350"
+  },
+  title: {
+    color: "#fff"
+  },
+  menuItemDefault: {
+    color: "rgb(147, 146, 146)"
+  },
+  svgDefault: {
+    fill: "rgb(147, 146, 146)"
+  }
+}
 
 export default class Navigation extends React.Component {
   render() {
     return (
-      <Toolbar style={{backgroundColor: "#EF5350"}}>
+      <Toolbar style={styles.navigation}>
        <ToolbarGroup float="left">
-         <ToolbarTitle text="Prime Calculate" style={{color: "#fff"}}/>
+         <ToolbarTitle text="Prime Calculate" style={styles.title}/>
          <FontIcon className="muidocs-icon-custom-sort"/>
        </ToolbarGroup>
        <ToolbarGroup float="right">
           <IconMenu iconButtonElement={<IconButton iconStyle={{fill: "white"}} touch={true}><MoreVertIcon/></IconButton>}>
-            <MenuItem primaryText="Home" leftIcon={<ActionHome/>} href="/"/>
-            <MenuItem primaryText="Contact" leftIcon={<ContentMail/>} href="/contact"/>
+            <MenuItem style={{padding: 0}} primaryText="Home" leftIcon={<ActionHome style={styles.svgDefault} hoverColor="#00000"/>} href="/" style={styles.menuItemDefault}/>
+            <MenuItem primaryText="Contact" leftIcon={<ContentMail style={styles.svgDefault}  hoverColor="#00000"/>} href="/contact" style={styles.menuItemDefault}/>
           </IconMenu>
        </ToolbarGroup>
      </Toolbar>
