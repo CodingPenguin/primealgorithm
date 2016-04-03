@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+
 import Paper from 'material-ui/lib/paper'
 import Prime_Calculate from '../components/prime-calculate.jsx'
 
