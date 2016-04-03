@@ -29,38 +29,6 @@ const styles = {
 }
 
 export default class Prime_Calculate extends React.Component {
-  constructor() {
-    super()
-  }
-  onChange(e) {
-    let primeNumber = $('#prime-number').val()
-    if ($.isNumeric(primeNumber) === true) {
-      switch (true) {
-        case primeNumber == 1 || primeNumber == 0: {
-          this.props.title("Neither Composite or Prime")
-          console.log("Neither Composite or Prime")
-          break;
-        }
-        case primeNumber == 2 || primeNumber == 3: {
-          console.log(`${primeNumber} is a prime number.`)
-          break;
-        }
-        case primeNumber % 2 === 0 || primeNumber % 3 === 0: {
-          console.log(`${primeNumber} is a composite number.`)
-          break;
-        }
-        default: {
-          console.log(`${primeNumber} is a prime number.`)
-        }
-      }
-    }
-    else if (primeNumber === "") {
-      console.log("Number?")
-    }
-    else {
-      console.log("Accep Only Number")
-    }
-  }
   render() {
     return (
       <TextField
@@ -71,8 +39,7 @@ export default class Prime_Calculate extends React.Component {
         fullWidth="true"
         underlineStyle={styles.underlineStyle}
         underlineFocusStyle={styles.underlineFocusStyle}
-        onChange={this.onChange.bind(this)}
-      />
+        onChange={this.props.onChange}/>
     )
   }
 }
