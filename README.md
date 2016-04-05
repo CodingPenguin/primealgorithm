@@ -1,7 +1,7 @@
 #Prime Calculate
 
 
-A [webapp](http://prime-calculate.lekosfmi.com/) implementation to determine whether an input is prime or composite number
+A [webapp](http://prime-calculate.lekosfmi.com/) implementation to determine whether an input is prime or composite number.
 
 ### Technology Includes:
 - [Material's UI](http://www.material-ui.com/#/) for the UI/UX
