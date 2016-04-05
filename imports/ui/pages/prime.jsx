@@ -1,9 +1,15 @@
 import React from 'react'
 import { render } from 'react-dom'
 
+/*
+  Import Components
+*/
 import Paper from 'material-ui/lib/paper'
 import Prime_Form from '../components/prime-form.jsx'
 
+/*
+  Styles
+*/
 const styles = {
   container: {
     top: "50%",
@@ -27,12 +33,16 @@ const styles = {
   }
 }
 
+/*
+  Begin React
+*/
 export default class Prime extends React.Component {
 
   constructor() {
     super()
     this.state = {
-      number: "Number?"
+      number: "Number?",
+      help: ""
     }
   }
 
@@ -43,13 +53,17 @@ export default class Prime extends React.Component {
   onChange(e) {
     let primeNumber = $('#prime-number').val()
 
-    let inputResult = (n) => {
+    let inputResult = (n = "Number?") => {
       this.setState({
-        number: n
+        number: n,
+        help: "",
+        alert: ""
       })
     }
 
     if ($.isNumeric(primeNumber) === true) {
+
+      // Begin Prime Number Algorithm
       switch (true) {
         case primeNumber == 1 || primeNumber == 0: {
           inputResult("Neither Composite or Prime")
@@ -62,6 +76,9 @@ export default class Prime extends React.Component {
         case primeNumber % 2 === 0 || primeNumber % 3 === 0: {
           if (primeNumber.length > 15) {
             inputResult("Composite Number")
+            this.setState({
+              alert: "Exceed 15 characters so data-binding is turned off, but everything still works :)"
+            })
           } else {
             inputResult(`${primeNumber} is a composite number.`)
           }
@@ -70,17 +87,48 @@ export default class Prime extends React.Component {
         default: {
           if (primeNumber.length > 15) {
             inputResult("Prime Number")
+            this.setState({
+              alert: "Exceed 15 characters so data-binding is turned off, but everything still works :)"
+            })
           } else {
             inputResult(`${primeNumber} is a prime number.`)
           }
         }
       }
     }
-    else if (primeNumber == "") {
-      inputResult("Number?")
+    else if (primeNumber.constructor == String) {
+      switch (primeNumber) {
+        case "Martha": {
+          inputResult(`${primeNumber} is a hoe.`)
+          break;
+        }
+        case "Winni":
+        case "Vicky": {
+          inputResult(`${primeNumber} is awesome.`)
+          break;
+        }
+        case "Vanielle": {
+          inputResult(`${primeNumber}, original developer of this amazing site.`)
+          break;
+        }
+        case "Danny": {
+          inputResult(`${primeNumber}, original developer of the Prime Algorithm.`)
+          break;
+        }
+        case "Help": {
+          inputResult("Type a number and I will evaluate whether it is prime or composite :)")
+          break;
+        }
+        default: {
+          inputResult()
+          this.setState({
+            help: "You can type 'Help' for help"
+          })
+        }
+      }
     }
     else {
-      inputResult("Accept Only Number")
+      inputResult()
     }
   }
 
@@ -93,8 +141,14 @@ export default class Prime extends React.Component {
               {this.state.number}
             </h2>
          </Paper>
-
         <Prime_Form onChange={this.onChange.bind(this)}/>
+
+        <h6 className="text-center">
+          {this.state.help}
+        </h6>
+        <h6 className="text-center">
+          {this.state.alert}
+        </h6>
       </div>
     )
   }
