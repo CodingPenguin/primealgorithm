@@ -11,7 +11,7 @@ A [webapp](http://prime-calculate.lekosfmi.com/) implementation to determine whe
   
 ## More!
 - The webapp is hosted at [prime-calculate.lekosfmi.com](http://prime-calculate.lekosfmi.com/)
-- Download the Prime Caculate CLI [here](https://github.com/CodingPenguin/primealgorithm/tree/prime-calculate)
+- Download the Prime Calculate CLI [here](https://github.com/CodingPenguin/primealgorithm/tree/prime-calculate)
 - Check the Prime Algorithm implemented in other languages [here](https://github.com/CodingPenguin/primealgorithm/tree/languages)
 
 ---
