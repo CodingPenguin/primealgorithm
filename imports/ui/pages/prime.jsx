@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 
 import Paper from 'material-ui/lib/paper'
-import Prime_Calculate from '../components/prime-calculate.jsx'
+import Prime_Form from '../components/prime-form.jsx'
 
 const styles = {
   container: {
@@ -28,15 +28,18 @@ const styles = {
 }
 
 export default class Prime extends React.Component {
+
   constructor() {
     super()
     this.state = {
       number: "Number?"
     }
   }
+
   componentDidMount() {
     document.title = "Home | Prime Calculate"
   }
+
   onChange(e) {
     let primeNumber = $('#prime-number').val()
 
@@ -91,7 +94,7 @@ export default class Prime extends React.Component {
             </h2>
          </Paper>
 
-        <Prime_Calculate onChange={this.onChange.bind(this)}/>
+        <Prime_Form onChange={this.onChange.bind(this)}/>
       </div>
     )
   }

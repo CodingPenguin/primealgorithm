@@ -6,6 +6,7 @@ import FloatingActionButton from 'material-ui/lib/floating-action-button';
 import Paper from 'material-ui/lib/paper'
 import TextField from 'material-ui/lib/text-field'
 
+
 const styles = {
   container: {
     marginTop: 100,
@@ -61,7 +62,7 @@ export default class Contact_Form extends React.Component {
     return (
       <form className="container-fluid" style={styles.container}>
         <Paper style={styles.paper} zDepth={2}>
-        <h4 style={styles.h4}>Let's Get In Touch!</h4>
+        <h4 style={styles.h4}>{this.props.contactTitle}</h4>
           <div className="row" style={{ paddingLeft: 30, paddingRight: 30, }}>
             <TextField
               id={this.props.name}

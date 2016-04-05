@@ -28,7 +28,7 @@ const styles = {
   }
 }
 
-export default class Prime_Calculate extends React.Component {
+export default class Prime_Form extends React.Component {
   render() {
     return (
       <TextField
