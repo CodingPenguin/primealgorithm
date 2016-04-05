@@ -1,4 +1,4 @@
-##Prime Calculate
+#Prime Calculate
 =========
 
 A [webapp](http://prime-calculate.lekosfmi.com/) implementation to determine whether an input is prime or composite number
