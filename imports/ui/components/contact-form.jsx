@@ -60,11 +60,11 @@ export default class Contact_Form extends React.Component {
   render() {
     return (
       <form className="container-fluid" style={styles.container}>
-        <Paper style={styles.paper} zDepth={1}>
+        <Paper style={styles.paper} zDepth={2}>
         <h4 style={styles.h4}>Let's Get In Touch!</h4>
           <div className="row" style={{ paddingLeft: 30, paddingRight: 30, }}>
             <TextField
-              id="name"
+              id={this.props.name}
               hintStyle={styles.hintStyle}
               inputStyle={styles.inputStyle}
               floatingLabelStyle={styles.floatingLabelStyle}
@@ -77,7 +77,7 @@ export default class Contact_Form extends React.Component {
           </div>
           <div className="row" style={{ paddingLeft: 30, paddingRight: 30, }}>
             <TextField
-              id="email"
+              id={this.props.email}
               hintStyle={styles.hintStyle}
               inputStyle={styles.inputStyle}
               floatingLabelStyle={styles.floatingLabelStyle}
@@ -90,7 +90,7 @@ export default class Contact_Form extends React.Component {
           </div>
           <div className="row" style={{ paddingLeft: 30, paddingRight: 30, }}>
             <TextField
-              id="message"
+              id={this.props.message}
               hintStyle={styles.hintStyle}
               inputStyle={styles.inputStyle}
               floatingLabelStyle={styles.floatingLabelStyle}
@@ -104,7 +104,8 @@ export default class Contact_Form extends React.Component {
         </Paper>
         <FloatingActionButton
             backgroundColor={styles.floatingActionButton.backgroundColor}
-            style={styles.floatingActionButton}>
+            style={styles.floatingActionButton}
+            onClick={this.props.onClick}>
               <ContentSend/>
         </FloatingActionButton>
       </form>
