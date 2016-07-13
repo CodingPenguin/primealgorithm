@@ -39,7 +39,7 @@ export default class Prime_Form extends React.Component {
         fullWidth="true"
         underlineStyle={styles.underlineStyle}
         underlineFocusStyle={styles.underlineFocusStyle}
-        onChange={this.props.onChange}/>
+        onChange={this.props.onChange} />
     )
   }
 }
